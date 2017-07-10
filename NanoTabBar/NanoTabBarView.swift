@@ -48,7 +48,7 @@ public class NanoTabBarView: UIView {
         for item in items {
             let itemView = NanoTabbarItemView(item)
             itemView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(NanoTabBarView.itemTapped(_:))))
-            self.itemViews.appen    d(itemView)
+            self.itemViews.append(itemView)
             self.addSubview(itemView)
             i += 1
         }
