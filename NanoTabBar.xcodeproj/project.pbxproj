@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		81D504151F13AB5700D9D2B7 /* NanoTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D504131F13AB5700D9D2B7 /* NanoTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81D5041E1F13B6EF00D9D2B7 /* NanoTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D5041D1F13B6EF00D9D2B7 /* NanoTabBarView.swift */; };
+		81D504201F13B70000D9D2B7 /* NanoTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D5041F1F13B70000D9D2B7 /* NanoTabBarItem.swift */; };
+		81D504221F13B71A00D9D2B7 /* NanoTabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D504211F13B71A00D9D2B7 /* NanoTabbarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81D504101F13AB5700D9D2B7 /* NanoTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NanoTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D504131F13AB5700D9D2B7 /* NanoTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NanoTabBar.h; sourceTree = "<group>"; };
 		81D504141F13AB5700D9D2B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D5041D1F13B6EF00D9D2B7 /* NanoTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoTabBarView.swift; sourceTree = "<group>"; };
+		81D5041F1F13B70000D9D2B7 /* NanoTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoTabBarItem.swift; sourceTree = "<group>"; };
+		81D504211F13B71A00D9D2B7 /* NanoTabbarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoTabbarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,29 @@
 		81D504121F13AB5700D9D2B7 /* NanoTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				81D5041C1F13B6C700D9D2B7 /* NanoTabBar */,
+				81D5041B1F13B6B800D9D2B7 /* Supporting Files */,
+			);
+			path = NanoTabBar;
+			sourceTree = "<group>";
+		};
+		81D5041B1F13B6B800D9D2B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				81D504131F13AB5700D9D2B7 /* NanoTabBar.h */,
 				81D504141F13AB5700D9D2B7 /* Info.plist */,
 			);
-			path = NanoTabBar;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81D5041C1F13B6C700D9D2B7 /* NanoTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				81D5041D1F13B6EF00D9D2B7 /* NanoTabBarView.swift */,
+				81D5041F1F13B70000D9D2B7 /* NanoTabBarItem.swift */,
+				81D504211F13B71A00D9D2B7 /* NanoTabbarItemView.swift */,
+			);
+			name = NanoTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +120,7 @@
 				TargetAttributes = {
 					81D5040F1F13AB5700D9D2B7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D504201F13B70000D9D2B7 /* NanoTabBarItem.swift in Sources */,
+				81D5041E1F13B6EF00D9D2B7 /* NanoTabBarView.swift in Sources */,
+				81D504221F13B71A00D9D2B7 /* NanoTabbarItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +270,7 @@
 		81D504191F13AB5700D9D2B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickolay.NanoTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +290,7 @@
 		81D5041A1F13AB5700D9D2B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
